@@ -14,6 +14,9 @@ $ColeccionUsuarios = new ColeccionUsuarios();
         <script type="text/javascript" src="../lib/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>        
         <title><?= Constantes::NOMBRE_SISTEMA; ?> - Usuarios</title>
     </head>
+
+    <?php include_once '../gui/header.php'; ?>
+
     <body>
 
         <?php include_once '../gui/navbar.php'; ?>

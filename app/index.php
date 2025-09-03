@@ -3,35 +3,30 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="google-signin-client_id" content="356408280239-7airslbg59lt2nped9l4dtqm2rf25aii.apps.googleusercontent.com" />
         
+        <!-- <link rel="icon" type="image/png" sizes="16x16" href="../lib/img/favicon-16x16.png"> -->
+        
+        <title><?php echo Constantes::NOMBRE_SISTEMA; ?> - Login</title>
+
         <link rel="stylesheet" href="../lib/bootstrap-4.1.1-dist/css/bootstrap.css" />
         <link rel="stylesheet" href="../lib/open-iconic-master/font/css/open-iconic-bootstrap.css" />
         <link rel="stylesheet" href="../lib/bootstrap-4.1.1-dist/css/uargflow_footer.css" />
         
         <script type="text/javascript" src="../lib/JQuery/jquery-3.3.1.js"></script>
         <script type="text/javascript" src="../lib/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>        
-        
-        <meta name="google-signin-client_id" content="356408280239-7airslbg59lt2nped9l4dtqm2rf25aii.apps.googleusercontent.com" />
-        
         <script type="text/javascript" src="https://apis.google.com/js/platform.js" async defer></script>
-        <!-- Esta importaciond de JQuery esta repetida  -->
-        
-        <script type="text/javascript" src="../lib/JQuery/jquery-3.3.1.js"></script>
         <script type="text/javascript" src="../lib/login.js"></script>
-        
-        <title><?php echo Constantes::NOMBRE_SISTEMA; ?> - Login</title>
     </head>
     <body>
-
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container navbar-dark bg-dark">
                 <a class="navbar-brand" href="#">
-                    <img src="../lib/img/Logo-UNPA-UARG-azul.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    <img src="../lib/img/logo_grcu_manager.png" width="150" height="50" class="d-inline-block align-top" alt="">
                     <?php echo Constantes::NOMBRE_SISTEMA; ?> - Login
                 </a>
             </div>
         </nav>
-
         <div class="container">
             <section id="main-content">
                 <article>
@@ -42,7 +37,7 @@
                         <div class="card-body">
 
                             <h5>Bienvenido</h5>
-                            <p>Estimado usuario: Bienvenido a la aplicaci&oacute;n UARGFlow BS, una aplicaci&oacute;n desarrollada en la UARG - UNPA.</p>
+                            <p>Estimado usuario: Bienvenido a la aplicaci&oacute;n GRCU Manager, una aplicaci&oacute;n desarrollada por 4Bytes</p>
 
                             <div class="row">
                                 <div class="col-12">
@@ -70,9 +65,9 @@
             </section>
         </div>
         <footer class="footer">
-            UARGFlow BS 
+            GRCU Manager
             <span class="oi oi-globe"></span> 
-            UNPA-UARG
+            4Bytes
         </footer>
     </body>
 </html>
