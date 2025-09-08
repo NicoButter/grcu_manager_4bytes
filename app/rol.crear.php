@@ -15,6 +15,7 @@ $Permiso = new ColeccionPermisos();
 
     </head>
     <body>
+        <?php include_once '../gui/header.php'; ?>
         <?php include_once '../gui/navbar.php'; ?>
         <div class="container">
             <form action="rol.crear.procesar.php" method="post">

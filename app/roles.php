@@ -15,7 +15,7 @@ $ColeccionRoles = new ColeccionRoles();
         <title><?php echo Constantes::NOMBRE_SISTEMA; ?> - Roles</title>
     </head>
     <body>
-
+        <?php include_once '../gui/header.php'; ?>
         <?php include_once '../gui/navbar.php'; ?>
         <div class="container">
             <div class="card">

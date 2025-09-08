@@ -40,6 +40,7 @@ BDConexion::getInstancia()->autocommit(true);
 
     </head>
     <body>
+        <?php include_once '../gui/header.php'; ?>
         <?php include_once '../gui/navbar.php'; ?>
         <div class="container">
             <p></p>

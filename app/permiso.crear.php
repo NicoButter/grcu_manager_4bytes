@@ -13,6 +13,7 @@ ControlAcceso::requierePermiso(PermisosSistema::PERMISO_PERMISOS);
         <title><?php echo Constantes::NOMBRE_SISTEMA; ?> - Crear Permiso</title>
     </head>
     <body>
+        <?php include_once '../gui/header.php'; ?>
         <?php include_once '../gui/navbar.php'; ?>
         <div class="container">
             <form action="permiso.crear.procesar.php" method="post"> 

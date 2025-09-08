@@ -248,8 +248,14 @@ class ControlAcceso {
 
         $this->ubicacion = Constantes::SERVER . $_SERVER["PHP_SELF"];
 
+        // Si está definido el flag, no ejecuta la verificación automática 
+        if(defined('IGNORE_CONTROLS') && IGNORE_CONTROLS === true){
+            return;
+        }
 
-        /**
+        $isLoginPage = ($this->ubicacion == Constantes::HOMEURL || $this->ubicacion == Constantes::SERVER . '/app/index.php');
+
+       /**
          * Verificación Inicial del Usuario caso la página no sea el index.
          */
         // if ($this->ubicacion != Constantes::HOMEURL) {
@@ -272,6 +278,27 @@ class ControlAcceso {
         } else {
             $_SESSION["HTTP_REFERER"] = Constantes::HOMEURL;
         }
+
+        $isLoginPage = ($this->ubicacion == Constantes::HOMEURL || $this->ubicacion == Constantes::SERVER . '/app/index.php');
+
+
+        // // Solo forzar selección de cuenta si no estamos en la página de login/selección
+        // if (!$isLoginPage && isset($_SESSION['usuario'])) {
+        //     unset($_SESSION['usuario']); // Borramos la sesión vieja
+        //     header("Location: " . Constantes::HOMEURL . "?select_account=1");
+        //     exit;
+        // }
+
+        // // Si llegamos desde el login con POST de Google
+        // if ($isLoginPage && isset($_POST['email']) && isset($_POST['nombre'])) {
+        //     try {
+        //         $this->creaSesion($_POST['email'], $_POST['nombre']);
+        //     } catch (Exception $e) {
+        //         echo "<script>alert('{$e->getMessage()}');</script>";
+        //         die($e->getMessage());
+        //     }
+        //     $this->redireccionaIndex();
+        // }
 
         /**
          * Crea la sesión del Usuario caso la página de origen de los datos pasados por formulario sea el index.
@@ -337,10 +364,12 @@ class ControlAcceso {
      * 
      */
     static function verificaPermiso($permiso_) {
-        $Usuario = $_SESSION['usuario'];
-        if ($Usuario == null) {
+        if (!isset($_SESSION['usuario']) || !($_SESSION['usuario'] instanceof UsuarioSesion)) {
             return false;
         }
+
+        $Usuario = $_SESSION['usuario'];
+
         foreach ($Usuario->roles as $Rol) {
             foreach ($Rol->permisos as $Permiso) {
                 if ($permiso_ == $Permiso->nombre) {
@@ -350,6 +379,7 @@ class ControlAcceso {
         }
         return false;
     }
+
 
     /**
      * Verifica si el usuario está logueado en el sistema (cargado en la sesión)

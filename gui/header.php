@@ -4,7 +4,11 @@
             <img src="../lib/img/logo_grcu_manager.png" width="170" height="100" class="img-fluid mr-2" alt="Logo">
         </div>
         <div class="d-flex align-items-center">
-            <span class="text-dark mr-3">Conectado como <strong><?= $_SESSION['usuario']->nombre; ?></strong></span>
+            <?php if (isset($_SESSION['usuario']) && $_SESSION['usuario'] instanceof UsuarioSesion): ?>
+                <span class="text-dark mr-3">
+                    Conectado como <strong><?= htmlspecialchars($_SESSION['usuario']->nombre); ?></strong>
+                </span>
+            <?php endif; ?>
             <a class="btn btn-outline-danger btn-sm" href="../app/salir.php">
                 <span class="oi oi-account-logout mr-1"></span>Salir
             </a>

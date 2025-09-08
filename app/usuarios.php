@@ -8,10 +8,18 @@ $ColeccionUsuarios = new ColeccionUsuarios();
 <html>
     <head>
         <meta charset="UTF-8">
+                
+        <link rel="apple-touch-icon" sizes="180x180" href="/uargflow/lib/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/uargflow/lib/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/uargflow/lib/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/uargflow/lib/favicon/site.webmanifest">
+        
         <link rel="stylesheet" href="../lib/bootstrap-4.1.1-dist/css/bootstrap.css" />
         <link rel="stylesheet" href="../lib/open-iconic-master/font/css/open-iconic-bootstrap.css" />
+        
         <script type="text/javascript" src="../lib/JQuery/jquery-3.3.1.js"></script>
         <script type="text/javascript" src="../lib/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>        
+        
         <title><?= Constantes::NOMBRE_SISTEMA; ?> - Usuarios</title>
     </head>
 

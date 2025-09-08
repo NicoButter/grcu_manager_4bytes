@@ -17,6 +17,7 @@ $consulta = BDConexion::getInstancia()->query($query);
         <title><?php echo Constantes::NOMBRE_SISTEMA; ?> - Crear Permiso</title>
     </head>
     <body>
+        <?php include_once '../gui/header.php'; ?>
         <?php include_once '../gui/navbar.php'; ?>
 
         <div class="container">

@@ -16,6 +16,7 @@ $Permiso = new Permiso($id);
 
     </head>
     <body>
+        <?php include_once '../gui/header.php'; ?>
         <?php include_once '../gui/navbar.php'; ?>
         <div class="container">
             <form action="permiso.modificar.procesar.php" method="post">

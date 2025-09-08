@@ -16,6 +16,7 @@ $Rol = new Rol($id);
 
     </head>
     <body>
+        <?php include_once '../gui/header.php'; ?>
         <?php include_once '../gui/navbar.php'; ?>
         <div class="container">
             <form action="rol.eliminar.procesar.php" method="post">

@@ -15,6 +15,7 @@ $Rol = new Rol($_GET["id"]);
         <title><?php echo Constantes::NOMBRE_SISTEMA; ?> - Propiedades del Rol</title>
     </head>
     <body>
+        <?php include_once '../gui/header.php'; ?>
         <?php include_once '../gui/navbar.php'; ?>
         <div class="container">
             <p></p>

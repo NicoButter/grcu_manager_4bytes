@@ -10,6 +10,7 @@ $RolesSistema = new ColeccionRoles();
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" type="image/png" sizes="16x16" href="../lib/img/favicon-16x16.png">
         <link rel="stylesheet" href="../lib/bootstrap-4.1.1-dist/css/bootstrap.css" />
         <link rel="stylesheet" href="../lib/open-iconic-master/font/css/open-iconic-bootstrap.css" />
         <script type="text/javascript" src="../lib/JQuery/jquery-3.3.1.js"></script>
@@ -17,6 +18,7 @@ $RolesSistema = new ColeccionRoles();
         <title><?= Constantes::NOMBRE_SISTEMA; ?> - Actualizar Usuario</title>
     </head>
     <body>
+        <?php include_once '../gui/header.php'; ?>
         <?php include_once '../gui/navbar.php'; ?>
         <div class="container">
             <form action="usuario.modificar.procesar.php" method="post">

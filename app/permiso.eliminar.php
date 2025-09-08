@@ -15,6 +15,7 @@ $Permiso = new Permiso($id);
         <title><?php echo Constantes::NOMBRE_SISTEMA; ?> - Eliminar Permiso</title>
     </head>
     <body>
+        <?php include_once '../gui/header.php'; ?>
         <?php include_once '../gui/navbar.php'; ?>
         <div class="container">
             <form action="permiso.eliminar.procesar.php" method="post">
