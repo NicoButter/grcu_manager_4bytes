@@ -68,17 +68,17 @@ Sistema académico desarrollado en **PHP** con base de datos **MySQL**, pensado 
 
 Este framework será utilizado por el grupo **4Bytes** como base para el desarrollo del sistema **GRCU Manager**, un proyecto orientado a la gestión académica y universitaria.  
 
-### Imagen del framework UARGFlow
-![UARGFlow Logo](./docs/img/uargflow.png)
+### Logo 4Bytes
+![UARGFlow Logo](./img/logo_4bytes.png)
 
-### Imagen del proyecto GRCU Manager
-![GRCU Manager Logo](./docs/img/grcu_manager.png)
+### Logo GRCU Manager
+![GRCU Manager Logo](./img/logo_grcu.png)
 
 ---
 
 ## 👥 Autores
 
-Proyecto desarrollado por estudiantes de la **UARG** como parte de la carrera de Informática.  
+Proyecto desarrollado por estudiantes de la **UARG** como parte de la carrera de Licenciatura en Sistemas de la Universidad Nacional de la Patagonia Austral.  
 
 ### Grupo 4BYTES
 - **ALVAREZ, Abril**  
